@@ -29,16 +29,6 @@ for i in range(1, epoch):
    r_2_t += rec_r_2_t
    rmsep += rec_rmsep
    r_2_p += rec_r_2_p
-   if max_r_2_p > rec_r_2_p:
-      max_r_2_p = max_r_2_p
-   else:
-      max_r_2_p = rec_r_2_p
-      max_r_2_p_label = i
-      best_now_s = now_s
-      best_rec_rmsec = rec_rmsec
-      best_rec_r_2_t = rec_r_2_t
-      best_rec_rmsep = rec_rmsep
-      best_rec_r_2_p = rec_r_2_p
 
 avg_rmsec = rmsec / (epoch - 1)
 avg_r_2_t = r_2_t / (epoch - 1)
